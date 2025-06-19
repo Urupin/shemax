@@ -1,0 +1,20 @@
+Odoo Field,Description,Ysell Field,Required,Notes
+sale_order.id,ID заказа Odoo,order_id,Да,Внутренний идентификатор Odoo (для связи)
+sale_order.partner_id.name,Имя получателя,client_name,Да,
+sale_order.partner_id.phone,Телефон получателя,client_phone,Да,
+sale_order.partner_id.email,Email получателя,client_email,Нет,
+sale_order.partner_id.street,Улица,client_address_street,Да,
+sale_order.partner_id.city,Город,client_address_city,Да,
+sale_order.partner_id.zip,Почтовый индекс,client_address_zip,Нет,
+sale_order.partner_id.country_id.name,Страна,client_address_country,Нет,
+sale_order.note,Комментарий к заказу,comment,Нет,
+sale_order.order_line.product_id.id,ID товара Odoo,product_odoo_id,Да,Для внутренней связи
+sale_order.order_line.product_id.ysell_id,ID товара Ysell,product_id,Да,Маппинг хранится в Odoo
+sale_order.order_line.product_uom_qty,Количество,quantity,Да,
+sale_order.order_line.serial_numbers,Серийные номера,serial_numbers,Нет,Список через запятую
+sale_order.order_line.price_unit,Цена за единицу,price,Нет,Если требуется
+sale_order.order_line.name,Название товара,product_name,Нет,
+sale_order.date_order,Дата заказа,order_date,Нет,
+sale_order.state,Статус заказа,status,Нет,Для внутреннего контроля
+ysell_order_id,ID заказа Ysell,ysell_order_id,Да,Хранится в Odoo после создания заказа
+ysell_delivery_status,Статус доставки Ysell,ysell_delivery_status,Да,Обновляется по
